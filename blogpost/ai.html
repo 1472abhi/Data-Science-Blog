@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-size: 20px;
+  padding: 10px;
+  background: grey;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 20px;
+  text-align: center;
+  background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 100%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+
+.card img {
+  width: 50%;
+  height:100%;
+  padding: 20px;
+  
+  text-align: center;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 5px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+    <div class="header">
+        <h2>ARTIFICIAL INTELLIGENCE (AI)</h2>
+      </div>
+
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Artificial Intelligence</h2>
+      <h5><i>Power of AI/i></h5>
+
+      <div class="row">
+        <div class="column">
+          <img src="img/AI.jpg" alt="Snow" style="width:100%">
+        </div>
+
+        <div class="column">
+            <p style ="text-align:justify;">
+                Artificial intelligence (AI) is intelligence demonstrated by machines, as opposed to the natural intelligence displayed by animals including humans. Leading AI textbooks define the field as the study of "intelligent agents": any system that perceives its environment and takes actions that maximize its chance of achieving its goals. Some popular accounts use the term "artificial intelligence" to describe machines that mimic "cognitive" functions that humans associate with the human mind, such as "learning" and "problem solving", however this definition is rejected by major AI researchers.
+            <br><br>
+            AI applications include advanced web search engines (i.e. Google), recommendation systems (used by YouTube, Amazon and Netflix), understanding human speech (such as Siri or Alexa), self-driving cars (e.g. Tesla), automated decision-making and competing at the highest level in strategic game systems (such as chess and Go). As machines become increasingly capable, tasks considered to require "intelligence" are often removed from the definition of AI, a phenomenon known as the AI effect. For instance, optical character recognition is frequently excluded from things considered to be AI, having become a routine technology.
+            </p>
+        </div>
+
+      </div> 
+    </div>
+  
+   
+    <div class="card">
+        <h3>Follow Me</h3>
+        <p style="text-align:justify;">Hey Guys, check all the blogs. Also suggest, what content you like to read. Explore yourself technically. <br/>Like and Suggest us at <i>1472abhi@gmail.com </i><br> Author: Abhishek Mahale</p>
+      </div>
+    </div>
+  </div>
+
+<div class="footer">
+  <h2>Abhishek Mahale @2023</h2>
+</div>
+
+</body>
+</html>
