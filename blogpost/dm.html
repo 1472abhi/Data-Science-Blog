@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-size: 20px;
+  padding: 10px;
+  background: grey;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 20px;
+  text-align: center;
+  background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 100%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+
+.card img {
+  width: 50%;
+  height:100%;
+  padding: 20px;
+  
+  text-align: center;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 5px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+    <div class="header">
+        <h2>DATA MINING (DM)</h2>
+      </div>
+
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Data Mining</h2>
+      <h5><i>Power of Data Mining, Oct 7, 2021</i></h5>
+
+      <div class="row">
+        <div class="column">
+          <img src="img/DM.png" alt="Snow" style="width:100%">
+        </div>
+
+        <div class="column">
+            <p style ="text-align:justify;">
+                Data mining is a process of extracting and discovering patterns in large data sets involving methods at the intersection of machine learning, statistics, and database systems.[1] Data mining is an interdisciplinary subfield of computer science and statistics with an overall goal to extract information (with intelligent methods) from a data set and transform the information into a comprehensible structure for further use. Data mining is the analysis step of the "knowledge discovery in databases" process, or KDD. Aside from the raw analysis step, it also involves database and data management aspects, data pre-processing, model and inference considerations, interestingness metrics, complexity considerations, post-processing of discovered structures, visualization, and online updating.
+                <br><br>
+                The term "data mining" is a misnomer, because the goal is the extraction of patterns and knowledge from large amounts of data, not the extraction (mining) of data itself. It also is a buzzword and is frequently applied to any form of large-scale data or information processing (collection, extraction, warehousing, analysis, and statistics) as well as any application of computer decision support system, including artificial intelligence (e.g., machine learning) and business intelligence. The book Data mining: Practical machine learning tools and techniques with Java.
+                </p>
+        </div>
+
+      </div> 
+    </div>
+  
+   
+    <div class="card">
+        <h3>Follow Me</h3>
+        <p style="text-align:justify;">Hey Guys, check all the blogs. Also suggest, what content you like to read. Explore yourself technically. <br/>Like and Suggest us at <i>1472abhi@gmail.com </i><br> Author: Abhishek Mahale</p>
+      </div>
+    </div>
+  </div>
+
+<div class="footer">
+  <h2>Abhishek Mahale@2021</h2>
+</div>
+
+</body>
+</html>
